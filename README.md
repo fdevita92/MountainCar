@@ -8,7 +8,7 @@ The script will train the network for 1500 episodes, to train it just type on yo
 To test the system type: python3 dqn_mountaincar.py test (It will use the latest model saved at the 1500th episode)
 
 # Best Model
-It is possible to run the script after training to verify which is the best model saved (This can take a lot of time). To run it type: python3 dqn_mountaincar.py best, it will test every model for 10 episodes and will return the best one with the highest win count (on average).
+It is possible to run the script after training to verify which is the best saved model(This can take a lot of time, so be patient). To run it type: python3 dqn_mountaincar.py best, it will test every model for 10 episodes and it will return the best one with the highest win count (on average).
 
 # Main Dependencies
 1. Tensorflow
