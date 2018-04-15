@@ -42,7 +42,6 @@ def neural_network_model(input_size,output_size,learning_rate):
 	model.add(Dense(output_size,activation='linear'))
 
 	model.compile(loss='mse',optimizer=Adam(lr=learning_rate))
-
 	return model
 
 def save_model(model,fname):
@@ -58,9 +57,9 @@ def load_model(model,fname):
 main_dqn = neural_network_model(input_size,output_size,learning_rate)
 target_dqn = neural_network_model(input_size,output_size,learning_rate)
 
-if os.path.exists(cd+"/model/mountcar-1000.h5") and sys.argv[1] == "test":
+if os.path.exists(cd+"/model/mountcar-1500.h5") and sys.argv[1] == "test":
 	print("Weights loaded successfully !")
-	main_dqn = load_model(main_dqn,"model/mountcar-1000.h5")
+	main_dqn = load_model(main_dqn,"model/mountcar-1500.h5")
 target_dqn.set_weights(main_dqn.get_weights())
 
 #scores = []
