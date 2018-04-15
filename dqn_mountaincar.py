@@ -42,7 +42,6 @@ def neural_network_model(input_size,output_size,learning_rate):
 	model.add(Dense(output_size,activation='linear'))
 
 	model.compile(loss='mse',optimizer=Adam(lr=learning_rate))
-
 	return model
 
 def save_model(model,fname):
