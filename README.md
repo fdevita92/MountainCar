@@ -10,8 +10,10 @@ To test the system type: python3 dqn_mountaincar.py test (It will use the latest
 # Best model
 It is possible to run the script after training to verify which is the best model saved (This can take a lot of time). To run it type: python3 dqn_mountaincar.py best, it will test every model for 10 episodes and will return the best one with the highest win count (on average).
 
-# Main dependencies
+# Main Dependencies
 1. Tensorflow
 2. Keras
 3. gym
 4. h5py
+
+For any question or suggestion feel free to contact me.
